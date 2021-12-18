@@ -11,4 +11,4 @@ A：为了学习游戏的开发，我会从0开始一步步实现游戏的所需
 
 A:简单来说就是看到了一个画师的游戏概念图，让我十分喜爱，并且本来也有这方面的想法，这也加强了我的决心。更多细节可以移步我的个人博客 ==>[天幕の小窝](www.tmcity233.club)
 
-![](https://github.com/Tmcity/A-Game-Demo/blob/main/Images-blog/main.png)
+![](https://github.com/Tmcity/Game-Demo/blob/main/Images-blog/main.png)
