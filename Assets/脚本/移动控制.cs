@@ -1,12 +1,10 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class move : MonoBehaviour
+public class 移动控制 : MonoBehaviour
 {
     // Start is called before the first frame update
-
-    public GameObject sphere;
     void Start()
     {
         
@@ -16,7 +14,6 @@ public class move : MonoBehaviour
     void Update()
     {
         Move();
-        PenZhuang();
     }
     public void Move(){
         if(Input.GetKeyDown(KeyCode.W)&&transform.position.z!=1){//检测W键按下，并同时z不等于1
@@ -30,11 +27,6 @@ public class move : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.D)&&transform.position.x!=1){//检测D键按下，并同时x不等于1
             transform.Translate(Vector3.right);//按下D键时，控制对象向右
-        }
-    }
-    public void PenZhuang(){
-        if(transform.position==sphere.transform.position){//检测当对象的位置等于sphere对象的位置时
-            print("Game Over");//输出“Game Over”
         }
     }
 }
