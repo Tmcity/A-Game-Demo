@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class 碰撞检测 : MonoBehaviour
 {
-
     public GameObject DestroyObj;
-    //public GameObject TriggerObj;
+    public static int flag;
+    public GameObject Sphere;
+    public GameObject Sphere2;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        
+        flag=1;
     }
 
     // Update is called once per frame
@@ -20,8 +19,13 @@ public class 碰撞检测 : MonoBehaviour
     {
 
     }
-
     public void OnTriggerEnter(Collider other){    //让碰撞发生时
-        Destroy(DestroyObj.gameObject);     //销毁“DestoyObj”
+        if(gameObject==Sphere){         //当触发此脚本的对象为Sphere时，将flag设为0
+            Destroy(DestroyObj.gameObject);     //销毁“DestoyObj”
+            flag=0;
+        }
+        if(gameObject==Sphere2){         //当触发此脚本的对象为Sphere时，将flag设为0
+            flag=6;
+        }
     }
 }

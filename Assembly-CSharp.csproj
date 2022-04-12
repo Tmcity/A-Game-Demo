@@ -36,9 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\脚本\NewBehaviourScript.cs" />
+     <Compile Include="Assets\脚本\主菜单.cs" />
      <Compile Include="Assets\脚本\关卡控制.cs" />
+     <Compile Include="Assets\脚本\地板生成.cs" />
+     <Compile Include="Assets\脚本\摄像机切换.cs" />
      <Compile Include="Assets\脚本\碰撞检测.cs" />
      <Compile Include="Assets\脚本\移动控制.cs" />
+     <None Include="Assets\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
     <Reference Include="UnityEngine">
         <HintPath>E:/Unity/2019.3.1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
