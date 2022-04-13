@@ -8,11 +8,11 @@ public class 主菜单 : MonoBehaviour
 {
     Button NewBt;
     Button End;
-    public static int flag;
+    public static int fgmain;
 
     void Start()
     {
-        flag=1;
+        fgmain=1;
     }
 
     void Awake(){

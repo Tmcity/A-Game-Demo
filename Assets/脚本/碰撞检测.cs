@@ -8,6 +8,7 @@ public class 碰撞检测 : MonoBehaviour
     public static int flag;
     public GameObject Sphere;
     public GameObject Sphere2;
+    public GameObject Cube;
 
     void Start()
     {
@@ -23,6 +24,9 @@ public class 碰撞检测 : MonoBehaviour
         if(gameObject==Sphere){         //当触发此脚本的对象为Sphere时，将flag设为0
             Destroy(DestroyObj.gameObject);     //销毁“DestoyObj”
             flag=0;
+        }
+        if(gameObject==Cube){         //当触发此脚本的对象为Sphere时，将flag设为0
+            Destroy(DestroyObj.gameObject);     //销毁“DestoyObj”
         }
         if(gameObject==Sphere2){         //当触发此脚本的对象为Sphere时，将flag设为0
             flag=6;

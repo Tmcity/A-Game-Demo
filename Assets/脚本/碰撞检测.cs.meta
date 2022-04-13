@@ -7,6 +7,8 @@ MonoImporter:
   - DestroyObj: {instanceID: 0}
   - Sphere: {fileID: 7390595714016451770, guid: 4b002fa206e702041afce1ec6dc840de,
       type: 3}
+  - Sphere2: {instanceID: 0}
+  - Cube: {fileID: 1278528006962170315, guid: ce5e827825e2d154e91ceef9e657d562, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

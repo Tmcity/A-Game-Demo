@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class 关卡控制 : MonoBehaviour
 {
     int fl_1;
-//    int fl_2;
+    int fll;
     int temp;
     void Start()
     {
@@ -19,21 +19,22 @@ public class 关卡控制 : MonoBehaviour
         }
         //SceneManager.LoadScene("主界面");
         fl_1=1;
-//        fl_2=1;
+        fll=1;
     }
 
     void Update()
     {
+        fll=主菜单.fgmain;
         fl_1=碰撞检测.flag;
-//        fl_2=主菜单.flag;
+
         if(fl_1==0){
             SceneManager.LoadScene(temp);
-            fl_1=1;
+            print(fl_1);
             print("Load"+"->"+temp);
         }
-/*        if(fl_2==0){
-            SceneManager.LoadScene(1);
-            fl_2=1;
+ /*       if(fll==0){
+            SceneManager.LoadScene("关卡Ⅰ");
+            fll=1;
             print("Load"+"->"+"new");
         }*/
     }
