@@ -24,7 +24,7 @@ public class 主菜单 : MonoBehaviour
     }
 
     void New(){
-        SceneManager.LoadScene("关卡Ⅰ");
+        SceneManager.LoadScene("关卡选择");
         print("开始游戏");
     }
     void Exit(){

@@ -9,4 +9,9 @@ public class 跨场景对象保护 : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
+    public 存档 other;
+
+    void OnApplicationQuit(){
+        other.Quit();
+    }
 }

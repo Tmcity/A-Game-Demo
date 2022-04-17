@@ -16,6 +16,6 @@ public class 按钮 : MonoBehaviour
 
     void Close(){
         Destroy(DestroyObj.gameObject);
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
     }
 }
